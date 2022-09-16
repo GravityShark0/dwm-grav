@@ -1,11 +1,12 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 0;        /* border pixel of windows */
-static const int gappx     = 5;                 /* gaps between windows */
+static const unsigned int borderpx  = 1;        /* border pixel of windows */
+//static const int gappx              = 5;                 /* gaps between windows */
+static const unsigned int gappx     = 10;        /* gap pixel between windows */
 static const unsigned int snap      = 12;       /* snap pixel */
-static const int showbar            = 1;        /* 0 means no bar */
-static const int topbar             = 1;        /* 0 means bottom bar */
+static const int showbar            = 2;        /* 0 means no bar */
+static const int topbar             = 0;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Hack:size=12" };
 static const char dmenufont[]       = "Hack:size=12";
 static const char col_gray1[]       = "#222222";
@@ -16,13 +17,14 @@ static const char col_cyan[]        = "#005577";
 
 static const char col_grav1[]       = "#191c25";
 static const char col_grav2[]       = "#272240";
+static const char col_grav3[]       = "#afeeee";
 static const char col_purp[]        = "#750077";
 static const char col_text[]        = "#fdeffd";
 
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_grav1, col_grav2 },
-	[SchemeSel]  = { col_text, col_grav1, col_grav2  },
+	[SchemeNorm] = { col_gray3, col_grav1, col_grav3 },
+	[SchemeSel]  = { col_text, col_grav1, col_grav3 },
 };
 
 /* tagging */
@@ -42,7 +44,7 @@ static const Rule rules[] = {
 static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
 static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
-static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen window */
+static const int lockfullscreen = 0; /* 1 will force focus on the fullscreen window */
 
 #include "gaplessgrid.c"
 static const Layout layouts[] = {
