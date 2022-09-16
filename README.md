@@ -1,7 +1,7 @@
 # dwm-grav
 a fork of dwm (dynamic window manager) with my theme
 
-[dwm 6.3](hhttps://dwm.suckless.org/)
+[dwm 6.3](https://dwm.suckless.org/)
 
 patches (most avaliable on https://dwm.suckless.org/patches/):
 
